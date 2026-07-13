@@ -1,0 +1,26 @@
+<div id="prompt_macros_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Prompt Macros</b>
+            <div class="fa-solid fa-circle-chevron-down inline-drawer-icon down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="prompt-macros-description">
+                Define macros to use in prompt fields with <code>{{macroName}}</code> syntax.
+                Can be placed in the Main Prompt, Post-History Instructions, and any other macro-enabled field.
+                Even within other macros!
+            </div>
+
+            <div class="prompt-macros-toolbar">
+                <div class="menu_button menu_button_icon" id="prompt_macros_add" title="Add new macro">
+                    <i class="fa-solid fa-plus"></i>
+                    <small>Add Macro</small>
+                </div>
+            </div>
+
+            <div id="prompt_macros_list" class="prompt-macros-list">
+                <!-- Macro entries are rendered here by JS -->
+            </div>
+        </div>
+    </div>
+</div>

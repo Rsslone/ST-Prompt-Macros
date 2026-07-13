@@ -1,0 +1,111 @@
+#prompt_macros_settings .inline-drawer-content {
+    padding-top: 10px;
+}
+
+.prompt-macros-description {
+    margin-bottom: 10px;
+    color: var(--SmartThemeQuoteColor);
+    font-size: 0.85em;
+}
+
+.prompt-macros-toolbar {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.prompt-macros-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ── Single row per macro ────────────────────────────────────── */
+.prompt-macro-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 6px;
+    background: var(--SmartThemeBotMesBlurTintColor);
+    min-height: 38px;
+}
+
+.prompt-macro-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.prompt-macro-row .macro-name {
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--SmartThemeQuoteColor);
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.prompt-macro-row .macro-preview {
+    flex-grow: 1;
+    color: var(--SmartThemeEmColor);
+    font-size: 0.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.prompt-macro-row .macro-row-actions {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.prompt-macros-footer {
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid var(--SmartThemeBorderColor);
+}
+
+.prompt-macros-hint {
+    color: var(--SmartThemeEmColor);
+    line-height: 1.4;
+}
+
+.prompt-macros-hint code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.prompt-macro-no-macros {
+    text-align: center;
+    color: var(--SmartThemeEmColor);
+    padding: 20px;
+    font-style: italic;
+}
+
+/* ── Popup editor styling ────────────────────────────────────── */
+.prompt-macro-editor-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    min-height: 400px;
+}
+
+.prompt-macro-editor-popup input {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+    flex-shrink: 0;
+}
+
+.prompt-macro-editor-popup textarea {
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    resize: vertical;
+    font-family: monospace;
+    line-height: 1.5;
+    tab-size: 4;
+}

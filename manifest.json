@@ -1,0 +1,15 @@
+{
+    "display_name": "Prompt Macros",
+    "loading_order": 5,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "rsslone",
+    "version": "1.0.0",
+    "homePage": "https://github.com/rsslone/ST-Prompt-Macros",
+    "hooks": {
+        "activate": "init",
+        "clean": "clean"
+    }
+}
